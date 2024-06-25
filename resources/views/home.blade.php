@@ -24,6 +24,6 @@
         <li>Register</li>
         <li>Lakukan pembayaran</li>
     </ul>
-    <a href="registrasi">Registrasi</a>
+    <a href="register">Registrasi</a>
 </body>
 </html>

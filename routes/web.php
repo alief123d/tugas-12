@@ -13,14 +13,17 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-use App\Http\Controllers\HomeController;
-use App\Http\Controllers\AuthController;
+// use ;
+// use ;
 
-Route::get('/', 'HomeController@index');
+// Route::get('/', 'HomeController@index');
+Route::get('/', 'App\Http\Controllers\HomeController@index');
 
 // Route Registrasi
-Route::get('/register', 'AuthController@register');
-Route::post('/register', 'AuthController@store');
+Route::get('/register', 'App\Http\Controllers\AuthController@register');
+Route::post('/register', 'App\Http\Controllers\AuthController@store');
 
 // Route Welcome
-Route::get('/welcome', 'AuthController@welcome');
+// Route::get('/welcome', function(){
+//     return view('welcome');
+// });

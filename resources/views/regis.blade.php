@@ -8,15 +8,16 @@
 </head>
 
 <body>
-    <form {{ route('regis.simpanData') }} method="post">
-    {{ csrf_field() }}
-        <h1>Buat Account Baru</h1>
-        <h2>Sign up form</h2>
-        <label>First name:</label><br>
-        <input type="text" name="firstName"><br><br>
-        <label>Last name:</label><br>
-        <input type="text" name="lastName"><br><br>
-        <label>Gender</label>
+<form action="/register" method="post">
+    <!-- {{ csrf_field() }} -->
+    @csrf 
+    <h1>Buat Account Baru</h1>
+    <h2>Sign up form</h2>
+    <label>First name:</label><br>
+    <input type="text" name="firstName"><br><br>
+    <label>Last name:</label><br>
+    <input type="text" name="lastName"><br><br>
+    <label>Gender</label>
         <br>
         <input type="radio" name="gender">Male
         <br>
